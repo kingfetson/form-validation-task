@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="contact-form" novalidate>
+    <h1>Contact Us</h1>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <div class="error" id="email-error"></div>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+    <div class="error" id="age-error"></div>
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="6" required></textarea>
+    <div class="info" id="message-info">0 words | 0 / 5000 characters</div>
+    <div class="error" id="message-error"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
